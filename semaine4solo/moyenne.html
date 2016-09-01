@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" >
+    //quelque variables utile plus tard
+    //une fonction qui permet d'effectuer la saisi + le calcule de la moyenne
+function gradeavg(n){
+    var totalN = 0;
+    var moyenne = 0;
+    var saisi = 0;
+    //boucle for pour la moyenne
+  for(i = 0; i <= n ; i++ ){
+    saisi = parseInt(prompt('saisisser vos notes'));
+    totalN = totalN + saisi;
+    moyenne = totalN/i;
+  };
+      alert("votre moyenne est de"+" "+ moyenne);
+};
+gradeavg(10);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

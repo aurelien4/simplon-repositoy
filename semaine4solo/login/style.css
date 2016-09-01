@@ -1,0 +1,47 @@
+*{
+  margin:5%;
+}
+fieldset{
+  margin:30px;
+}
+
+#login{
+  display:block;
+  text-align: right;
+
+}
+#mdp{
+  display:inline-block;
+  text-align: right;
+}
+#connexion{
+  display:block-inline;
+  box-shadow: 6px 6px 6px grey;
+}
+#oublier{
+  display:block-inline;
+  box-shadow: 6px 6px 6px grey;
+
+}
+.input{
+  font-weight: bold;
+  height:5%;
+  width:40%;
+  margin:35px;
+  font-size: 20px;
+  background-color: rgba(255,255,255,1)
+}
+.buton{
+  width:20%;
+  height:6%;
+}
+.section{
+  background-image: radial-gradient(black,grey);
+  border: 3px solid black;
+  border-radius: 40px;
+}
+img{
+  height:200px;
+  width: 200px;
+  float: right;
+}

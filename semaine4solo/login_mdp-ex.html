@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+
+<script type="text/javascript">
+  //demande du Login
+  var login = prompt("Entrer votre login");
+  //demande du mot de passe
+  var mdp = prompt("Entrer votre mdp");
+  //valeur du login
+  var identifiant = "joe@gmail.com";
+  //valeur du mdp
+  var vmdp = "12345";
+  //message de validation/Erreur
+  var valider = "Bienvenue"
+  var error = "Identifiant ou mot de passe incorrect";
+//Ici je vérifie la précense "@"
+if(login.indexOf("@") != -1){
+  //ici je demande la verification du nombre de caractère supérieurs a 4
+  if(login.length > 4){
+    //Ici je compare la valeur entré et la valeur réèl du lolangue="javascript"gin
+    if(login == identifiant){
+      //Ici je verifie le nombre de caractère du mdp
+      if(mdp.length > 4){
+        //Ici je compare la valeur MDP et VMDP
+        if(mdp == vmdp){
+          alert(valider);
+        }else{
+          alert(error);
+        };
+      }else{
+        alert(error);
+      };
+    }else{
+      alert(error);
+    }
+  }else{
+    alert(error);
+  };
+}else{
+  alert(error);
+};
+
+</script>
+</body>
+</html>
