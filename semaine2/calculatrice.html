@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>De quelle couleur...</title>
+</head>
+<body>
+<script type="text/javascript">
+while(recommencer = true){
+  //On demande a l'utilisateur de choisir une operation
+  var signe = prompt("Choisissez un signe entre +, -, / , *, %");
+  //On affiche le choix dans la console
+  console.log("choix", signe);
+
+  //On demande ensuite à l'utilisateur de choisir un premier chiffre ou nombre
+  var nombre1 = prompt("Choisissez un premier chiffre ou nombre");
+  //On affiche le choix dans la console
+  console.log("chiffre1", nombre1);
+
+  //On demande ensuite de faire un deuxième choix
+  var nombre2 = prompt("Choisissez un deuxième chiffre ou nombre");
+  console.log("chiffre2", nombre2);
+
+  //On crée une variable résultat qu'on utilisera dans le switch
+  var resultat;
+  var phrase = "le résultat est";
+  var error = "Vous n'avez pas choisie d'opération valide";
+  //On utilise un switch pour éxécuter l'opération choisie
+  switch (signe) {
+    case '+':
+      resultat = parseInt(nombre1) + parseInt(nombre2);
+      alert(phrase  + resultat);
+      console.log(phrase + resultat);
+      break;
+    case '-':
+      resultat = parseInt(nombre1) - parseInt(nombre2);
+      alert(phrase + resultat);
+      console.log(phrase + resultat);
+      break;
+    case '/':
+      resultat = parseInt(nombre1) / parseInt(nombre2);
+      alert(phrase + resultat);
+      console.log(phrase + resultat);
+      break;
+    case '*':
+      resultat = parseInt(nombre1) * parseInt(nombre2);
+      alert(phrase + resultat);
+      console.log(phrase  + resultat);
+      break;
+    case '%':
+      resultat = parseInt(nombre1) % parseInt(nombre2);
+      alert(phrase + resultat);
+      console.log(phrase + resultat);
+      break;
+    default:
+      alert(error);
+      console.log(error);
+  }
+};
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+<script>
+  //Les variables
+    var chiffre1;
+    var operation = [ '+', '-', '*' ];
+    var random;
+    var random2;
+    var chiffre2;
+    var chiffre3;
+    var reponsepc;
+    var reponsepc2;
+    var reponse;
+
+    //function qui me permette de lancer les calcule
+    function calcule(){
+      reponsepc = eval(chiffre1 + random + chiffre2);
+    };
+    function calcul(){
+      reponsepc2 = eval(chiffre1 + random + chiffre2 + random2 + chiffre3);
+    };
+    //boucle pour les 3 équation a 2 chiffre
+    for(i = 0 ;i < 3; i++){
+
+      var chiffre1 = Math.round(Math.random() * 10);
+      //Ici on effectue un choix random d'opération dans le tableau
+      var random = operation[Math.floor(Math.random() * operation.length)];
+      //Ramdom du 2ème chiffre par l'ordi
+      var chiffre2 = Math.round(Math.random() * 10);
+      calcule();
+
+      alert(parseInt(chiffre1) + random + parseInt(chiffre2));
+      reponse = prompt("reponse?");
+      if(reponse == reponsepc){
+        alert("bien joué"+ " " + reponsepc);
+
+
+      }else{
+        alert("mauvaise reponse recommencer"+ " " + " " + reponsepc);
+      };
+
+    };
+
+    alert("bravo tu a reussi 3 fois, augmenton le niveau");
+    //boucle pour l'equation a 3 chiffre
+  for(i= 0; i < 2; i++){
+    chiffre1 = Math.round(Math.random() * 10);
+    random = operation[Math.floor(Math.random() * operation.length)];
+    chiffre2 = Math.round(Math.random() * 10);
+    random2 = operation[Math.floor(Math.random() * operation.length)];
+    chiffre3 = Math.round(Math.random() * 10);
+    calcul();
+    alert(parseInt(chiffre1) + random + parseInt(chiffre2) + random2 + parseInt(chiffre3));
+    reponse = prompt("reponse?");
+    if(reponse == reponsepc2){
+      alert("bien joué" + " " + reponsepc2);
+
+    }else{
+      alert("mauvaise reponse recommencer " + reponsepc2);
+    };
+
+  };
+
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
