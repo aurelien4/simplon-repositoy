@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    background-color:#347EB2;
+    position:absolute;
+    top:0;
+    width: 100%;
+}
+.calendar
+{
+    border:1px solid black;
+    padding:1px;
+    background-color:#4594ff;
+    width:60%;
+    margin:auto;
+    margin-top:100px;
+    height:40%;
+  
+}
+.calendar th
+{
+    border:1px solid black;
+    background-color:#ffffff;
+}
+.calendar td
+{
+    border:1px solid black;
+    background-color:#ffffff;
+    text-align:center;
+}
+.jourJ
+{
+    color:#00FF00;
+}
+.jourAvantApres
+{
+    color:#5a779e;
+} 
+.container{
+    margin: 10% 39%;
+    font-size: 80px;
+    font-family: 'Baloo', cursive;
+}   
+img{
+    position:absolute;
+    right:18px;
+    height:50%;
+    width: 90%;
+}
+.clock{
+    position:relative;
+    top:70px;
+    
+}
